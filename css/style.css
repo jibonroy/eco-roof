@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#slider {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  #slider ul {
+    position: relative;
+    list-style: none;
+    height: 100%;
+    width: 10000%;
+    padding: 0;
+    margin: 0;
+    transition: all 750ms ease;
+    left: 0;
+  }
+  #slider ul li {
+    position: relative;
+    height: 100%;
+    padding: 0;
+    float: left;
+  }
+
+  #slider ul li img{
+    width: 100vw;
+    height: 80%;
+    min-height: 570px;
+    max-height: 850px;
+    padding: 0;
+    margin: 0;
+    filter: brightness(35%);
+    z-index: -1;
+    object-fit:cover;
+  }
+
+  #slider #prev, #slider #next {
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    border: 5px solid;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    transform: translateY(-50%);
+    transition: all 150ms ease;
+  }
+
+  #slider #prev {
+    left: 10px;
+  }
+  #slider #next {
+    right: 10px;
+  }
+  
+  #slider #prev:hover, #slider #next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0;
+  }
+
+  #slider .container{
+    color: white;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+  }
+  #slider .container .head{
+    font-size:  700%;
+    text-align: center;
+    display: block;
+    margin: 50px auto;
+    justify-content: space-around;
+  }
+  #slider .container .head2{
+    text-transform:uppercase;
+    text-align: center;
+    display:block;
+  }
+  #slider .container .head2 p{
+    font-size: 200%;
+    border: 2px solid white;
+    padding: 10px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 5px;
+  }
+  #slider .container .showmore{
+    margin: 40px auto;
+    display: block;
+    border: 2px solid white;
+    font-size: 200%;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  #slider .container .showmore:hover,  #slider .container .showmore:active,  #slider .container .showmore:focus{
+    background-color: white;
+    color: black;
+  }
